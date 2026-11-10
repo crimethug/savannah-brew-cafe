@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food for All Initiative</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f5f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Navigation */
+        nav {
+            background: #174d38;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(
+                rgba(15,60,40,0.65),
+                rgba(15,60,40,0.65)
+            ),
+            url("https://images.unsplash.com/photo-1547592180-85f173990554?w=1200");
+
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 85px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .donate-btn {
+            display: inline-block;
+            background: #e7b957;
+            color: #174d38;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #174d38;
+        }
+
+        /* Programme Cards */
+        .programmes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #f2f8f2;
+            padding: 22px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid #dceadd;
+        }
+
+        .card h3 {
+            color: #23834d;
+        }
+
+        /* Helping Families */
+        .helping {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 35px;
+            padding: 20px;
+            background: #eaf4eb;
+            border-radius: 12px;
+        }
+
+        .helping img {
+            width: 45%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .helping-text {
+            flex: 1;
+        }
+
+        /* Footer */
+        footer {
+            background: #174d38;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 27px;
+            }
+
+            .programmes {
+                grid-template-columns: 1fr;
+            }
+
+            .helping {
+                flex-direction: column;
+            }
+
+            .helping img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h2>Food for All</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#programmes">Programmes</a>
+            <a href="donate.html">Donate</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Together, We Can End Hunger</h1>
+
+        <p>
+            Our mission is to fight food insecurity by providing
+            food to vulnerable families in Nairobi.
+        </p>
+
+        <a href="donate.html" class="donate-btn">
+            Donate Now
+        </a>
+    </section>
+
+    <div class="content">
+
+        <h2 id="programmes">Our Programmes</h2>
+
+        <p>
+            We work together with communities to ensure
+            that everyone has access to nutritious food.
+        </p>
+
+        <div class="programmes">
+
+            <div class="card">
+                <h3>Food Distribution</h3>
+                <p>
+                    Providing food packages to vulnerable
+                    families in our communities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>School Feeding</h3>
+                <p>
+                    Supporting children with nutritious
+                    meals to improve learning and health.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Community Farming</h3>
+                <p>
+                    Encouraging local farming to promote
+                    sustainable food production.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="helping">
+
+            <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800"
+                alt="Community volunteers helping children">
+
+            <div class="helping-text">
+
+                <h2>Helping Families</h2>
+
+                <p>
+                    Every meal makes a difference.
+                    Through your support, we can reach
+                    more vulnerable families in Nairobi.
+                </p>
+
+                <a href="donate.html" class="donate-btn">
+                    Support Our Mission
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p><strong>Food for All Initiative</strong></p>
+        <p>Sharing Food, Spreading Hope.</p>
+        <p>© 2026 Food for All Initiative</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mama Njeri's Kitchen</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf4ed;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Navigation */
+nav {
+    background: #713d25;
+    color: white;
+    padding: 22px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #ffd18b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffd18b;
+}
+
+/* Hero */
+.hero {
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1547592180-85f173990554?w=1200");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 110px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero a {
+    background: #d97835;
+    color: white;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hero a:hover {
+    background: #a84f22;
+}
+
+/* Content */
+.content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.section {
+    background: #fffaf4;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eee1d5;
+}
+
+.section h3 {
+    color: #713d25;
+    margin-bottom: 18px;
+    font-size: 21px;
+}
+
+/* Menu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #713d25;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 13px;
+    border-bottom: 1px solid #eadfd5;
+}
+
+td:last-child {
+    color: #c2672d;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: #f8eee4;
+}
+
+/* Order form */
+input, select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #d9c9ba;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #c2672d;
+}
+
+button {
+    width: 100%;
+    background: #713d25;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #c2672d;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Visit */
+#visit p {
+    margin-bottom: 13px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #713d25;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive */
+@media(max-width: 650px) {
+    body {
+        padding: 8px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        padding: 75px 15px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .gallery img {
+        height: 95px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Mama Njeri's Kitchen</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#visit">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Welcome to Mama Njeri's Kitchen</h1>
+        <p>Enjoy Delicious Kenyan Meals Prepared Fresh Every Day.</p>
+        <a href="#menu">View Our Menu</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Menu -->
+        <div class="section" id="menu">
+            <h3>Our Food Menu</h3>
+
+            <table>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Chicken Pilau</td>
+                    <td>KES 350</td>
+                </tr>
+
+                <tr>
+                    <td>Ugali & Sukuma Wiki</td>
+                    <td>KES 250</td>
+                </tr>
+
+                <tr>
+                    <td>Chapati (2 pieces)</td>
+                    <td>KES 100</td>
+                </tr>
+
+                <tr>
+                    <td>Beef Stew</td>
+                    <td>KES 400</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Order -->
+        <div class="section" id="order">
+            <h3>Order Your Favourite Meal</h3>
+
+            <form onsubmit="event.preventDefault(); alert('Thank you for choosing Mama Njeri\\'s Kitchen! Your order has been received.');">
+
+                <input type="text"
+                placeholder="Your Full Name"
+                required>
+
+                <input type="tel"
+                placeholder="Your Phone Number"
+                required>
+
+                <select required>
+                    <option value="">Select Your Meal</option>
+                    <option>Chicken Pilau</option>
+                    <option>Ugali & Sukuma Wiki</option>
+                    <option>Chapati (2 pieces)</option>
+                    <option>Beef Stew</option>
+                </select>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+        </div>
+
+        <!-- Gallery -->
+        <div class="section">
+            <h3>Food Gallery</h3>
+
+            <div class="gallery">
+
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=300"
+                alt="Delicious meal">
+
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300"
+                alt="Fresh healthy food">
+
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300"
+                alt="Fresh food plate">
+
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section" id="visit">
+            <h3>Visit Us Today</h3>
+
+            <p>Opening Hours: Monday - Saturday, 8 AM - 9 PM</p>
+
+            <p>Sunday: 10 AM - 6 PM</p>
+
+            <p>Location: Nairobi, Kenya</p>
+
+            <p>Phone: 0712 345 678</p>
+
+            <p>Welcome for fresh and delicious meals!</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mama Njeri's Kitchen</p>
+        <p>Fresh Food, Wonderful Moments.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
